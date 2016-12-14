@@ -11,6 +11,27 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
-    return view('welcome');
+    $usuario = User::create([
+        'name' => 'Emelec',
+        'email' => 'hola@gg.com',
+        'password' => bcrypt('12345'),
+        'gender' => 'm',
+        'biography'=> 'Camepeon del Pais del Ecuador'
+
+    ]);
+    return "Usuario Guardado";
+});
+
+
+Route::get('/update', function () {
+    $usuario = User::find(1);
+    $usuario ->name='Fuerza Amarilla';
+    $usuario ->email ='cambiado@nn.nn';
+    $usuario ->save();
+
+
+    return "Usuario Actualizado";
 });
