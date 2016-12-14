@@ -17,4 +17,5 @@ Route::get('/',[
     'as'=>'home',
     'uses'=>'PagesController@home'
 ]);
-Route::get('/all','QueryController@getAll');
+Route::get('/all','QueryController@eloquentAll');
+Route::get('/get/{gender}','QueryController@eloquentGet');

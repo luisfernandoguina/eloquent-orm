@@ -29,6 +29,13 @@
                         <li>
                             <a href="{{url('/all')}}">Todos los usuarios</a>
                         </li>
+                        <li>
+                            <a href="{{url('/get/f')}}">Todos los usuarios Femeninos Get</a>
+                        </li>
+
+                        <li>
+                            <a href="{{url('/get/m')}}">Todos los usuarios Masculinos Get</a>
+                        </li>
 
                     </ul>
 
