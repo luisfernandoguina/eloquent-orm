@@ -19,23 +19,27 @@
                 <li>
                     <a href="{{url('/')}}">Home</a>
                 </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toogle" data-toggle="dropdown">
+                        Consultas Eloquent
+                        <span class="caret">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{url('/all')}}">Todos los usuarios</a>
+                        </li>
+
+                    </ul>
+
+                </li>
 
             </ul>
 
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Eloquent ORM</h1>
-            <p>Texto</p>
-        </div>
-
-
-    </div>
-    <div class="container">
         @yield('content')
-    </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
